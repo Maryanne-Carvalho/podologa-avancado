@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Central de demonstração — Modelo Avançado</title>
+  <meta name="description" content="Como testar o modelo avançado com dados fictícios: contas de teste, reserva dupla e restauração dos dados.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#fbf6f1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Jost:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/elegance.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="sistema/css/sistema.css">
+  <script src="sistema/js/config.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/palettes.js"></script>
+  <script src="js/color-utils.js"></script>
+  <script src="js/theme-engine.js"></script>
+  <script>PS.theme.init();</script>
+</head>
+<body class="elegance" data-page="demo">
+  <div class="site" id="site">
+    <div data-layout="header"></div>
+
+    <main id="conteudo">
+      <section class="demo-hub" aria-labelledby="demo-title">
+        <div class="container stack" id="demo-hub">
+          <div class="head">
+            <p class="kicker">Modelo Avançado · We Lúmen</p>
+            <h1 id="demo-title">Central de <em>demonstração</em></h1>
+            <p class="head__sub">Tudo o que você vê aqui usa dados fictícios, guardados apenas neste navegador. Não há login real nem servidor: a demonstração serve para conhecer e testar as telas antes de configurar o Supabase.</p>
+          </div>
+          <div data-demo-estado></div>
+        </div>
+      </section>
+    </main>
+
+    <div data-layout="footer"></div>
+  </div>
+
+  <script src="js/layout.js"></script>
+  <script src="sistema/js/icones.js"></script>
+  <script src="js/elegance.js"></script>
+  <script src="js/palette-switcher.js"></script>
+  <script src="sistema/js/tempo.js"></script>
+  <script src="sistema/js/disponibilidade.js"></script>
+  <script src="sistema/js/dados-demo.js"></script>
+  <script src="sistema/js/api-demo.js"></script>
+  <script src="sistema/js/api-supabase.js"></script>
+  <script src="sistema/js/api.js"></script>
+  <script src="sistema/js/ui.js"></script>
+  <script src="sistema/js/site-extra.js"></script>
+  <script src="sistema/js/demonstracao.js"></script>
+</body>
+</html>

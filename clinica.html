@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A clínica — Podologia Studio</title>
+  <meta name="description" content="Conheça o consultório: recepção, sala de atendimento, organização e protocolo de biossegurança (conteúdo demonstrativo).">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#fbf6f1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Jost:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/elegance.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="sistema/css/sistema.css">
+  <script src="sistema/js/config.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/palettes.js"></script>
+  <script src="js/color-utils.js"></script>
+  <script src="js/theme-engine.js"></script>
+  <script>PS.theme.init();</script>
+</head>
+<body class="elegance" data-page="clinica">
+  <div class="site" id="site">
+    <div data-layout="header"></div>
+
+    <main id="conteudo">
+
+      <!-- ===== HERO: foto ampla ===== -->
+      <section class="clinic-hero page-top" aria-labelledby="clinica-title">
+        <div class="container">
+          <nav class="crumbs" aria-label="Você está em"><a href="index.html">Início</a><span aria-hidden="true">/</span><span aria-current="page">A clínica</span></nav>
+        </div>
+        <div class="container clinic-hero__stage">
+          <figure class="media clinic-hero__media" data-image-path="clinic.heroImage">
+            <img alt="" decoding="async" fetchpriority="high">
+            <div class="media__fallback" aria-hidden="true"><svg class="icon"><use href="#i-home"/></svg><span>Foto do consultório</span></div>
+          </figure>
+          <div class="clinic-hero__card">
+            <p class="kicker">A clínica</p>
+            <h1 id="clinica-title" data-bind="clinic.heroTitle">Um espaço pensado para você se sentir à vontade.</h1>
+            <p data-bind="clinic.heroText"></p>
+            <a class="link-arrow" href="#galeria">Ver as fotos do espaço <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== APRESENTAÇÃO + NÚMEROS ===== -->
+      <section class="section clinic-intro" aria-labelledby="espaco-title">
+        <div class="container clinic-intro__grid">
+          <h2 id="espaco-title">Pequeno de propósito, <em>pensado nos detalhes.</em></h2>
+          <div class="clinic-intro__text" data-render="clinic-intro"></div>
+        </div>
+        <div class="container">
+          <dl class="facts" data-render="clinic-facts"></dl>
+          <p class="note center-text">Números ilustrativos de demonstração.</p>
+        </div>
+      </section>
+
+      <!-- ===== ESPAÇOS: recepção, sala, equipamentos ===== -->
+      <section class="section spaces" aria-label="Ambientes do consultório">
+        <div class="container spaces__list" data-render="clinic-spaces"></div>
+      </section>
+
+      <!-- ===== BIOSSEGURANÇA ===== -->
+      <section class="section biosafety" aria-labelledby="bio-title">
+        <div class="container biosafety__grid">
+          <div class="biosafety__intro">
+            <p class="kicker kicker--on-deep">Higiene e biossegurança</p>
+            <h2 id="bio-title">O cuidado com a higiene <em>começa antes de você chegar.</em></h2>
+            <p class="biosafety__note">
+              <svg class="icon" aria-hidden="true"><use href="#i-info"/></svg>
+              <span data-bind="clinic.biosafetyNote"></span>
+            </p>
+          </div>
+          <ol class="biosafety__steps" role="list" data-render="biosafety"></ol>
+        </div>
+      </section>
+
+      <!-- ===== GALERIA ===== -->
+      <section class="section gallery" id="galeria" aria-labelledby="galeria-title">
+        <div class="container">
+          <header class="head head--split">
+            <div>
+              <p class="kicker">Galeria</p>
+              <h2 id="galeria-title">Conheça o espaço <em>por dentro</em></h2>
+            </div>
+            <p class="head__aside">Imagens ilustrativas de demonstração. Clique em uma foto para ampliar e use as setas para navegar.</p>
+          </header>
+          <ul class="gallery__grid gallery__grid--clinic" role="list" data-render="gallery"></ul>
+        </div>
+      </section>
+
+      <!-- ===== EXPERIÊNCIA ===== -->
+      <section class="section journey" aria-labelledby="experiencia-title">
+        <div class="container">
+          <header class="head head--center">
+            <p class="kicker">A experiência</p>
+            <h2 id="experiencia-title">Como é ser atendida <em>aqui</em></h2>
+            <p class="head__sub">Do momento em que você chega até as orientações para casa.</p>
+          </header>
+          <ol class="journey__list" role="list" data-render="clinic-experience"></ol>
+        </div>
+      </section>
+
+      <!-- ===== HORÁRIOS + AGENDAMENTO ===== -->
+      <section class="section visit" aria-labelledby="visita-title">
+        <div class="container visit__grid">
+          <div class="visit__copy">
+            <p class="kicker">Venha conhecer</p>
+            <h2 id="visita-title">Atendimento <em>com hora marcada</em></h2>
+            <p class="visit__address" data-render="address"></p>
+            <div class="visit__actions">
+              <a class="btn btn--primary btn--lg" href="agendar.html">
+                <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>
+                Agendar meu horário
+              </a>
+              <a class="btn btn--outline btn--lg" href="contato.html">Como chegar e contatos</a>
+            </div>
+          </div>
+          <div class="hours">
+            <h3 class="hours__title"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>Horários de atendimento</h3>
+            <table class="hours__table">
+              <caption class="sr-only">Horários de atendimento</caption>
+              <tbody data-render="hours"></tbody>
+            </table>
+            <p class="note">Horários ilustrativos.</p>
+          </div>
+        </div>
+      </section>
+
+      <nav class="page-pager" aria-label="Navegação entre páginas" data-render="page-pager"></nav>
+    </main>
+
+    <div data-layout="footer"></div>
+  </div>
+
+  <noscript><p class="noscript">Este site usa JavaScript para montar o menu e o conteúdo. Ative o JavaScript no navegador.</p></noscript>
+  <script src="js/layout.js"></script>
+  <script src="sistema/js/icones.js"></script>
+  <script src="js/elegance.js"></script>
+  <script src="js/palette-switcher.js"></script>
+  <script src="sistema/js/tempo.js"></script>
+  <script src="sistema/js/disponibilidade.js"></script>
+  <script src="sistema/js/dados-demo.js"></script>
+  <script src="sistema/js/api-demo.js"></script>
+  <script src="sistema/js/api-supabase.js"></script>
+  <script src="sistema/js/api.js"></script>
+  <script src="sistema/js/ui.js"></script>
+  <script src="sistema/js/site-extra.js"></script>
+</body>
+</html>

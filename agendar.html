@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agendar on-line — Podologia Studio</title>
+  <meta name="description" content="Escolha o serviço, o dia e o horário livre e confirme seu agendamento.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#fbf6f1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Jost:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/elegance.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="sistema/css/sistema.css">
+  <script src="sistema/js/config.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/palettes.js"></script>
+  <script src="js/color-utils.js"></script>
+  <script src="js/theme-engine.js"></script>
+  <script>PS.theme.init();</script>
+</head>
+<body class="elegance" data-page="agendar">
+  <div class="site" id="site">
+    <div data-layout="header"></div>
+
+    <main id="conteudo">
+      <section class="booking-page" aria-labelledby="agendar-title">
+        <div class="container">
+          <nav class="crumbs" aria-label="Você está em"><a href="index.html">Início</a> <span aria-hidden="true">/</span> <span aria-current="page">Agendar on-line</span></nav>
+          <div class="head">
+            <p class="kicker">Agendamento on-line</p>
+            <h1 id="agendar-title">Escolha o melhor <em>horário para você</em></h1>
+            <p class="head__sub">Veja os horários realmente livres na agenda da clínica. Você só precisa entrar na sua conta no momento de confirmar.</p>
+          </div>
+          <div id="agendar" class="wizard" aria-live="polite"><p class="loading"><span class="spinner" aria-hidden="true"></span>Carregando a agenda…</p></div>
+        </div>
+      </section>
+    </main>
+
+    <div data-layout="footer"></div>
+  </div>
+
+  <script src="js/layout.js"></script>
+  <script src="sistema/js/icones.js"></script>
+  <script src="js/elegance.js"></script>
+  <script src="js/palette-switcher.js"></script>
+  <script src="sistema/js/tempo.js"></script>
+  <script src="sistema/js/disponibilidade.js"></script>
+  <script src="sistema/js/dados-demo.js"></script>
+  <script src="sistema/js/api-demo.js"></script>
+  <script src="sistema/js/api-supabase.js"></script>
+  <script src="sistema/js/api.js"></script>
+  <script src="sistema/js/ui.js"></script>
+  <script src="sistema/js/site-extra.js"></script>
+  <script src="sistema/js/agendar.js"></script>
+  <script src="sistema/js/seletor-horario.js"></script>
+</body>
+</html>

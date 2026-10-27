@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Podologia Studio — Podologia clínica e preventiva em São Paulo</title>
+  <meta name="description" content="Modelo Avançado (demonstração): site institucional para podólogas. Profissional, depoimentos e contatos fictícios.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#fbf6f1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Jost:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/elegance.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="sistema/css/sistema.css">
+  <script src="sistema/js/config.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/palettes.js"></script>
+  <script src="js/color-utils.js"></script>
+  <script src="js/theme-engine.js"></script>
+  <script>PS.theme.init();</script>
+</head>
+<body class="elegance" data-page="inicio">
+  <div class="site" id="site">
+    <div data-layout="header"></div>
+
+    <main id="conteudo">
+
+      <!-- ===== HERO ===== -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <p class="kicker" data-bind="hero.eyebrow">Podologia clínica · São Paulo</p>
+            <h1 id="hero-title" class="hero__title">
+              <span data-bind="hero.titleStart">Pés bem cuidados,</span>
+              <em data-bind="hero.titleEmphasis">passos mais leves.</em>
+            </h1>
+            <p class="hero__lead" data-bind="hero.subtitle"></p>
+            <div class="hero__actions">
+              <a class="btn btn--primary btn--lg" href="agendar.html">
+                <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>
+                Agendar on-line
+              </a>
+              <a class="btn btn--outline btn--lg" href="servicos.html">Ver todos os serviços</a>
+            </div>
+            <div class="hero__sign">
+              <span class="hero__sign-line" aria-hidden="true"></span>
+              <p><strong data-bind="professional.name">Dra. Marina Oliveira</strong><span data-bind="professional.role"></span></p>
+            </div>
+          </div>
+
+          <div class="hero__visual">
+            <span class="hero__frame" aria-hidden="true"></span>
+            <figure class="media hero__media" data-image="hero">
+              <img alt="" decoding="async" fetchpriority="high">
+              <div class="media__fallback" aria-hidden="true"><svg class="icon"><use href="#i-foot"/></svg><span>Imagem ilustrativa</span></div>
+            </figure>
+            <p class="hero__badge">
+              <span class="hero__badge-num" data-bind="professional.experienceYears">8</span>
+              <span class="hero__badge-text">anos de cuidado<br><small>dado demonstrativo</small></span>
+            </p>
+          </div>
+        </div>
+
+        <div class="container">
+          <ul class="hero__strip" role="list">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>Horário reservado, sem espera</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>Materiais esterilizados</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span data-bind-address-short>Vila Mariana, São Paulo – SP</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ===== APRESENTAÇÃO BREVE ===== -->
+      <section class="section home-about" aria-labelledby="home-about-title">
+        <div class="container home-about__grid">
+          <figure class="media home-about__media" data-image="portrait">
+            <img alt="" decoding="async">
+            <div class="media__fallback" aria-hidden="true"><svg class="icon"><use href="#i-user"/></svg><span>Foto da profissional</span></div>
+          </figure>
+          <div class="home-about__copy">
+            <p class="kicker">Quem vai cuidar de você</p>
+            <h2 id="home-about-title">Prazer, eu sou a <em data-bind="professional.firstName">Marina</em>.</h2>
+            <p class="home-about__lead" data-bind="home.aboutTeaser"></p>
+            <blockquote class="home-about__quote"><p data-bind="about.quote"></p></blockquote>
+            <a class="btn btn--outline" href="sobre.html">
+              Conheça minha história
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== SERVIÇOS EM DESTAQUE ===== -->
+      <section class="section home-services" aria-labelledby="home-services-title">
+        <div class="container">
+          <header class="head head--split">
+            <div>
+              <p class="kicker">Serviços</p>
+              <h2 id="home-services-title">Os cuidados <em>mais procurados</em></h2>
+            </div>
+            <p class="head__aside">Todo atendimento começa por uma avaliação. Conheça todos os serviços, com detalhes sobre como funcionam e como se preparar.</p>
+          </header>
+          <ul class="home-services__grid" role="list" data-render="home-services"></ul>
+          <div class="center-row">
+            <a class="btn btn--primary" href="servicos.html">
+              Ver todos os serviços
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== PRÉVIA DA CLÍNICA ===== -->
+      <section class="section home-clinic" aria-labelledby="home-clinic-title">
+        <div class="container home-clinic__grid">
+          <div class="home-clinic__copy">
+            <p class="kicker">A clínica</p>
+            <h2 id="home-clinic-title">Um espaço pequeno, silencioso e <em>organizado</em></h2>
+            <p>Uma pessoa por horário, intervalo para higienização completa e um ambiente pensado para você relaxar. Conheça a recepção, a sala de atendimento e o nosso protocolo de biossegurança.</p>
+            <a class="btn btn--outline" href="clinica.html">
+              Explore a clínica
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+          </div>
+          <div class="home-clinic__mosaic" data-render="clinic-preview"></div>
+        </div>
+      </section>
+
+      <!-- ===== DIFERENCIAIS ===== -->
+      <section class="section diffs" aria-labelledby="diferenciais-title">
+        <div class="container">
+          <header class="head head--center">
+            <p class="kicker">Diferenciais</p>
+            <h2 id="diferenciais-title">O que você encontra <em>no consultório</em></h2>
+          </header>
+          <ul class="diffs__grid" role="list" data-render="differentials"></ul>
+        </div>
+      </section>
+
+      <!-- ===== PRÉVIA DE AVALIAÇÕES ===== -->
+      <section class="section voices" aria-labelledby="depoimentos-title">
+        <div class="container voices__grid">
+          <div class="voices__intro">
+            <p class="kicker kicker--on-deep">Avaliações</p>
+            <h2 id="depoimentos-title">Experiências de quem <em>passou por aqui</em></h2>
+            <p class="voices__flag" data-testimonial-flag>
+              <svg class="icon" aria-hidden="true"><use href="#i-info"/></svg>
+              Exemplos fictícios, criados apenas para demonstrar o layout. Não são avaliações reais.
+            </p>
+            <a class="btn btn--on-deep" href="avaliacoes.html">
+              Mais avaliações
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+          </div>
+          <div class="carousel" data-carousel aria-roledescription="carrossel" aria-label="Avaliações">
+            <div class="carousel__viewport">
+              <div class="carousel__track" data-render="testimonials-carousel" aria-live="polite"></div>
+            </div>
+            <div class="carousel__controls">
+              <button class="carousel__btn" type="button" data-carousel-prev aria-label="Avaliação anterior"><svg class="icon" aria-hidden="true"><use href="#i-chevron-left"/></svg></button>
+              <div class="carousel__dots" data-carousel-dots></div>
+              <button class="carousel__btn" type="button" data-carousel-next aria-label="Próxima avaliação"><svg class="icon" aria-hidden="true"><use href="#i-chevron-right"/></svg></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== ETAPAS ===== -->
+      <section class="section steps" aria-labelledby="etapas-title">
+        <div class="container">
+          <header class="head head--center">
+            <p class="kicker">Como funciona</p>
+            <h2 id="etapas-title">Do primeiro contato <em>aos cuidados em casa</em></h2>
+            <p class="head__sub">Cada pessoa tem necessidades diferentes. Este é o caminho que o atendimento costuma seguir.</p>
+          </header>
+          <ol class="steps__list" role="list" data-render="steps"></ol>
+        </div>
+      </section>
+
+      <!-- ===== CHAMADA FINAL ===== -->
+      <section class="final" aria-labelledby="final-title">
+        <div class="container">
+          <div class="final__box">
+            <div class="final__copy">
+              <p class="kicker kicker--on-primary">Agende seu horário</p>
+              <h2 id="final-title">Seus pés merecem um cuidado <em>atento e sem pressa.</em></h2>
+              <p>Veja os horários livres e agende em poucos passos, a qualquer hora. Se preferir, fale com a clínica pelo WhatsApp.</p>
+              <div class="final__actions">
+                <a class="btn btn--on-primary btn--lg" href="agendar.html">
+                  <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>
+                  Escolher meu horário
+                </a>
+                <a class="link-light" href="contato.html">Ver todos os contatos</a>
+              </div>
+            </div>
+            <figure class="media final__media" data-image="cta">
+              <img alt="" decoding="async">
+              <div class="media__fallback" aria-hidden="true"><svg class="icon"><use href="#i-sparkle"/></svg><span>Imagem ilustrativa</span></div>
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div data-layout="footer"></div>
+  </div>
+
+  <noscript><p class="noscript">Este site usa JavaScript para montar o menu e o conteúdo. Ative o JavaScript no navegador.</p></noscript>
+  <script src="js/layout.js"></script>
+  <script src="sistema/js/icones.js"></script>
+  <script src="js/elegance.js"></script>
+  <script src="js/palette-switcher.js"></script>
+  <script src="sistema/js/tempo.js"></script>
+  <script src="sistema/js/disponibilidade.js"></script>
+  <script src="sistema/js/dados-demo.js"></script>
+  <script src="sistema/js/api-demo.js"></script>
+  <script src="sistema/js/api-supabase.js"></script>
+  <script src="sistema/js/api.js"></script>
+  <script src="sistema/js/ui.js"></script>
+  <script src="sistema/js/site-extra.js"></script>
+</body>
+</html>

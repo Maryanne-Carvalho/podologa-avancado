@@ -1,0 +1,103 @@
+/* Arquivo do Elegance — independente de qualquer outro projeto.
+   Este arquivo pertence ao Elegance e pode ser alterado sem afetar outros projetos. */
+
+/* ==========================================================================
+   TOKENS — Podologia Studio
+   Fonte única de verdade para cores, tipografia, espaços, raios e sombras.
+   As 7 cores-base (--color-primary ... --color-muted) e algumas cores
+   auxiliares são definidas pelo motor de temas (js/theme-engine.js).
+   Os valores abaixo são o padrão (paleta "Sálvia & Marfim") e funcionam
+   mesmo sem JavaScript.
+   ========================================================================== */
+
+:root {
+  /* ---- Cores-base (sobrescritas pelo motor de temas) ---- */
+  --color-primary: #5e7d68;
+  --color-secondary: #dfe7db;
+  --color-accent: #9db59a;
+  --color-background: #f8f5ec;
+  --color-surface: #ffffff;
+  --color-text: #23352a;
+  --color-muted: #5b6b60;
+  --color-deep: #2c4637;
+
+  /* ---- Cores calculadas para legibilidade (também via JS) ---- */
+  --color-on-primary: #ffffff;
+  --color-on-accent: #23352a;
+  --color-on-deep: #f8f5ec;
+  --color-primary-ink: #4f6c59;   /* primária usada como texto */
+  --color-accent-ink: #557052;    /* destaque usado como texto */
+  --color-accent-on-deep: #b8ccb5;/* destaque sobre fundos escuros */
+  --color-muted-on-deep: #c9d3cb;
+
+  /* ---- Cores derivadas (acompanham qualquer paleta automaticamente) ---- */
+  --color-primary-hover: color-mix(in srgb, var(--color-primary) 84%, var(--color-text));
+  --color-primary-soft: color-mix(in srgb, var(--color-primary) 12%, var(--color-surface));
+  --color-primary-tint: color-mix(in srgb, var(--color-primary) 22%, var(--color-background));
+  --color-secondary-soft: color-mix(in srgb, var(--color-secondary) 55%, var(--color-background));
+  --color-accent-soft: color-mix(in srgb, var(--color-accent) 22%, var(--color-surface));
+  --color-border: color-mix(in srgb, var(--color-text) 11%, transparent);
+  --color-border-strong: color-mix(in srgb, var(--color-text) 22%, transparent);
+  --color-header-bg: color-mix(in srgb, var(--color-background) 86%, transparent);
+  --color-focus: var(--color-primary-ink);
+  --shadow-color: color-mix(in srgb, var(--color-deep) 16%, transparent);
+
+  /* ---- Tipografia ---- */
+  --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --font-body: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  --text-xs: 0.78rem;
+  --text-sm: 0.9rem;
+  --text-base: 1rem;
+  --text-md: 1.125rem;
+  --text-lg: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
+  --text-xl: clamp(1.6rem, 1.3rem + 1.2vw, 2.25rem);
+  --text-2xl: clamp(2rem, 1.5rem + 2vw, 3rem);
+  --text-3xl: clamp(2.5rem, 1.7rem + 3.4vw, 4.4rem);
+
+  --leading-tight: 1.1;
+  --leading-snug: 1.3;
+  --leading-body: 1.65;
+
+  /* ---- Espaçamento ---- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --section-pad: clamp(4rem, 3rem + 4vw, 7rem);
+
+  --container: 1180px;
+  --gutter: clamp(1rem, 0.5rem + 2.5vw, 2.5rem);
+
+  /* ---- Formas (o raio-base muda por paleta para dar personalidade) ---- */
+  --radius-base: 16px;
+  --radius-sm: calc(var(--radius-base) * 0.5);
+  --radius-md: var(--radius-base);
+  --radius-lg: calc(var(--radius-base) * 1.5);
+  --radius-arch: 999px 999px var(--radius-md) var(--radius-md);
+  --radius-pill: 999px;
+
+  /* ---- Sombras ---- */
+  --shadow-sm: 0 1px 2px var(--shadow-color);
+  --shadow-md: 0 6px 18px -6px var(--shadow-color), 0 2px 4px -2px var(--shadow-color);
+  --shadow-lg: 0 24px 48px -20px var(--shadow-color), 0 8px 16px -8px var(--shadow-color);
+
+  /* ---- Movimento ---- */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --dur-fast: 160ms;
+  --dur: 280ms;
+  --dur-slow: 520ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-fast: 0ms;
+    --dur: 0ms;
+    --dur-slow: 0ms;
+  }
+}

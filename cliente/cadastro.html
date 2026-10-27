@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Criar conta — Área do cliente</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#fbf6f1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Jost:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/elegance.css">
+  <link rel="stylesheet" href="../sistema/css/sistema.css">
+  <script src="../sistema/js/config.js"></script>
+  <script src="../js/content.js"></script>
+  <script src="../js/palettes.js"></script>
+  <script src="../js/color-utils.js"></script>
+  <script src="../js/theme-engine.js"></script>
+  <script>PS.theme.init();</script>
+</head>
+<body class="elegance" data-area="acesso" data-page="cadastro" data-raiz="../">
+<template data-conteudo>
+
+  <div class="auth__card">
+    <p class="auth__kicker">Área do cliente</p>
+    <h1>Criar conta</h1>
+    <p class="muted">Pedimos só o necessário para identificar seus agendamentos e avisar sobre mudanças.</p>
+    <p class="demo-accounts" data-demo-aviso hidden><strong>Demonstração:</strong> a conta fica salva só neste navegador. Use dados fictícios, não informe dados reais.</p>
+    <p class="alert" data-msg hidden role="alert"></p>
+    <form class="form" data-form novalidate>
+      <div class="field"><label class="field__label" for="nome">Nome completo</label>
+        <input class="input" id="nome" type="text" autocomplete="name" required maxlength="120" aria-describedby="nome-e">
+        <p class="field__error" id="nome-e" hidden></p></div>
+      <div class="field"><label class="field__label" for="telefone">Telefone (WhatsApp)</label>
+        <input class="input" id="telefone" type="tel" autocomplete="tel" required inputmode="tel" placeholder="(11) 90000-0000" aria-describedby="telefone-e">
+        <p class="field__hint">Com DDD. Usado só para falar sobre seus horários.</p><p class="field__error" id="telefone-e" hidden></p></div>
+      <div class="field"><label class="field__label" for="email">E-mail</label>
+        <input class="input" id="email" type="email" autocomplete="email" required inputmode="email" aria-describedby="email-e">
+        <p class="field__error" id="email-e" hidden></p></div>
+      <div class="field"><label class="field__label" for="senha">Senha</label>
+        <div class="password-wrap"><input class="input" id="senha" type="password" autocomplete="new-password" required minlength="8" aria-describedby="senha-e">
+        <button type="button" class="password-toggle" data-toggle-senha aria-pressed="false" aria-label="Mostrar senha">Mostrar</button></div>
+        <p class="field__hint">Pelo menos 8 caracteres.</p><p class="field__error" id="senha-e" hidden></p></div>
+      <div class="field"><label class="field__label" for="senha2">Repita a senha</label>
+        <div class="password-wrap"><input class="input" id="senha2" type="password" autocomplete="new-password" required minlength="8" aria-describedby="senha2-e">
+        <button type="button" class="password-toggle" data-toggle-senha aria-pressed="false" aria-label="Mostrar senha">Mostrar</button></div>
+        <p class="field__error" id="senha2-e" hidden></p></div>
+      <div class="field"><label class="check"><input type="checkbox" id="aceite" aria-describedby="aceite-e"><span>Li e aceito a <a href="../privacidade.html" target="_blank" rel="noopener">política de privacidade</a>.</span></label><p class="field__error" id="aceite-e" hidden></p></div>
+      <button class="btn btn--primary btn--block" type="submit" data-enviar>Criar conta</button>
+    </form>
+    <div class="auth__links"><span>Já tem conta? <a href="entrar.html" data-link-entrar>Entrar</a></span></div>
+  </div>
+</template>
+<noscript><p style="padding:1rem">Esta área precisa de JavaScript ativado.</p></noscript>
+<script src="../sistema/js/tempo.js"></script>
+<script src="../sistema/js/disponibilidade.js"></script>
+<script src="../sistema/js/dados-demo.js"></script>
+<script src="../sistema/js/api-demo.js"></script>
+<script src="../sistema/js/api-supabase.js"></script>
+<script src="../sistema/js/api.js"></script>
+<script src="../sistema/js/ui.js"></script>
+<script src="../sistema/js/icones.js"></script>
+<script src="../sistema/js/layout-app.js"></script>
+<script src="../js/palette-switcher.js"></script>
+<script src="../sistema/js/cliente.js"></script>
+</body>
+</html>

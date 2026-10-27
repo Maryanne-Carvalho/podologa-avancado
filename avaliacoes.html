@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Avaliações — Podologia Studio</title>
+  <meta name="description" content="Como as experiências de atendimento podem ser apresentadas. Depoimentos fictícios de demonstração.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#fbf6f1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Jost:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/elegance.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="sistema/css/sistema.css">
+  <script src="sistema/js/config.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/palettes.js"></script>
+  <script src="js/color-utils.js"></script>
+  <script src="js/theme-engine.js"></script>
+  <script>PS.theme.init();</script>
+</head>
+<body class="elegance" data-page="avaliacoes">
+  <div class="site" id="site">
+    <div data-layout="header"></div>
+
+    <main id="conteudo">
+
+      <!-- ===== HERO centralizado ===== -->
+      <section class="reviews-hero page-top" aria-labelledby="avaliacoes-title">
+        <div class="container">
+          <nav class="crumbs crumbs--center" aria-label="Você está em"><a href="index.html">Início</a><span aria-hidden="true">/</span><span aria-current="page">Avaliações</span></nav>
+          <div class="reviews-hero__inner">
+            <p class="kicker">Avaliações</p>
+            <h1 id="avaliacoes-title" class="reviews-hero__title">O que fica depois de <em>cada atendimento</em></h1>
+            <p class="reviews-hero__lead" data-bind="reviewsIntro"></p>
+            <p class="demo-banner demo-banner--center" data-testimonial-flag>
+              <svg class="icon" aria-hidden="true"><use href="#i-info"/></svg>
+              Todos os depoimentos desta página são exemplos fictícios, criados para demonstrar o layout. Não são avaliações de pacientes reais.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CITAÇÃO EM DESTAQUE ===== -->
+      <section class="featured-quote" aria-label="Depoimento em destaque" data-render="reviews-featured"></section>
+
+      <!-- ===== MURAL DE DEPOIMENTOS ===== -->
+      <section class="section reviews-wall" aria-labelledby="mural-title">
+        <div class="container">
+          <header class="head head--split">
+            <div>
+              <p class="kicker">Experiências</p>
+              <h2 id="mural-title">Relatos sobre <em>o atendimento</em></h2>
+            </div>
+            <p class="head__aside">Exemplos com textos curtos e longos, para mostrar como o layout se comporta com avaliações reais de tamanhos diferentes.</p>
+          </header>
+          <ul class="reviews-wall__grid" role="list" data-render="reviews-grid"></ul>
+        </div>
+      </section>
+
+      <!-- ===== ESPAÇO PARA AVALIAÇÕES REAIS ===== -->
+      <section class="section reviews-future" aria-labelledby="futuras-title">
+        <div class="container reviews-future__grid">
+          <div class="reviews-future__copy">
+            <p class="kicker">Avaliações reais</p>
+            <h2 id="futuras-title">Um espaço preparado para <em>relatos verdadeiros</em></h2>
+            <p>Quando o site for publicado, esta página exibirá apenas depoimentos de pacientes reais, enviados espontaneamente e publicados com autorização por escrito.</p>
+            <ul class="reviews-future__list" role="list">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Somente relatos autorizados por quem atendemos</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Sem notas, estrelas ou números inventados</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Nome exibido apenas com consentimento</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Nenhuma promessa de resultado clínico</li>
+            </ul>
+          </div>
+          <figure class="reviews-future__slot">
+            <div class="reviews-future__card" aria-hidden="true">
+              <span class="reviews-future__line"></span>
+              <span class="reviews-future__line"></span>
+              <span class="reviews-future__line reviews-future__line--short"></span>
+            </div>
+            <figcaption>Espaço reservado para a próxima avaliação real autorizada.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ===== CHAMADA ===== -->
+      <section class="final" aria-labelledby="final-title">
+        <div class="container">
+          <div class="final__box">
+            <div class="final__copy">
+              <p class="kicker kicker--on-primary">Sua vez</p>
+              <h2 id="final-title">Venha viver essa experiência <em>com calma.</em></h2>
+              <p>Agende uma avaliação e conheça de perto o atendimento sem pressa e com explicações claras.</p>
+              <div class="final__actions">
+                <a class="btn btn--on-primary btn--lg" href="agendar.html">
+                  <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>
+                  Agendar on-line
+                </a>
+                <a class="link-light" href="clinica.html">Conhecer a clínica</a>
+              </div>
+            </div>
+            <figure class="media final__media" data-image="reviews">
+              <img alt="" decoding="async">
+              <div class="media__fallback" aria-hidden="true"><svg class="icon"><use href="#i-sparkle"/></svg><span>Imagem ilustrativa</span></div>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <nav class="page-pager" aria-label="Navegação entre páginas" data-render="page-pager"></nav>
+    </main>
+
+    <div data-layout="footer"></div>
+  </div>
+
+  <noscript><p class="noscript">Este site usa JavaScript para montar o menu e o conteúdo. Ative o JavaScript no navegador.</p></noscript>
+  <script src="js/layout.js"></script>
+  <script src="sistema/js/icones.js"></script>
+  <script src="js/elegance.js"></script>
+  <script src="js/palette-switcher.js"></script>
+  <script src="sistema/js/tempo.js"></script>
+  <script src="sistema/js/disponibilidade.js"></script>
+  <script src="sistema/js/dados-demo.js"></script>
+  <script src="sistema/js/api-demo.js"></script>
+  <script src="sistema/js/api-supabase.js"></script>
+  <script src="sistema/js/api.js"></script>
+  <script src="sistema/js/ui.js"></script>
+  <script src="sistema/js/site-extra.js"></script>
+</body>
+</html>

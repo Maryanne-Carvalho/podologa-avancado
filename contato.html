@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contato e agendamento — Podologia Studio</title>
+  <meta name="description" content="WhatsApp, telefone, endereço, horários e dúvidas sobre agendamento (dados demonstrativos).">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#fbf6f1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Jost:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/elegance.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="sistema/css/sistema.css">
+  <script src="sistema/js/config.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/palettes.js"></script>
+  <script src="js/color-utils.js"></script>
+  <script src="js/theme-engine.js"></script>
+  <script>PS.theme.init();</script>
+</head>
+<body class="elegance" data-page="contato">
+  <div class="site" id="site">
+    <div data-layout="header"></div>
+
+    <main id="conteudo">
+
+      <!-- ===== HERO de conversão ===== -->
+      <section class="contact-hero page-top" aria-labelledby="contato-title">
+        <div class="container">
+          <nav class="crumbs" aria-label="Você está em"><a href="index.html">Início</a><span aria-hidden="true">/</span><span aria-current="page">Contato</span></nav>
+          <div class="contact-hero__grid">
+            <div class="contact-hero__copy">
+              <p class="kicker">Contato e agendamento</p>
+              <h1 id="contato-title" class="contact-hero__title">Vamos cuidar dos seus pés <em>juntas?</em></h1>
+              <p class="contact-hero__lead" data-bind="contact.intro"></p>
+              <p class="contact-hero__meta"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg><span data-bind="contact.responseTime"></span></p>
+            </div>
+            <div class="wa-card">
+              <span class="wa-card__icon" aria-hidden="true"><svg class="icon"><use href="#i-whatsapp"/></svg></span>
+              <p class="wa-card__label">WhatsApp</p>
+              <p class="wa-card__number"><span data-bind="contact.whatsappDisplay"></span> <span class="demo-chip demo-chip--on-primary" data-demo-chip>fictício</span></p>
+              <a class="btn btn--on-primary btn--lg btn--block" href="agendar.html"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>Agendar on-line</a>
+              <button class="btn btn--outline-light btn--block" type="button" data-whatsapp>Prefiro conversar pelo WhatsApp</button>
+              <p class="wa-card__note">Demonstração: o número acima não está conectado a um atendimento real.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CANAIS + ENDEREÇO ===== -->
+      <section class="section channels" aria-labelledby="canais-title">
+        <div class="container">
+          <h2 id="canais-title" class="sr-only">Canais de contato</h2>
+          <ul class="channels__grid" role="list" data-render="contact-channels"></ul>
+        </div>
+      </section>
+
+      <!-- ===== COMO SOLICITAR UM HORÁRIO ===== -->
+      <section class="section howto" aria-labelledby="como-title">
+        <div class="container howto__grid">
+          <div>
+            <p class="kicker">Passo a passo</p>
+            <h2 id="como-title">Como solicitar <em>um horário</em></h2>
+            <p class="howto__text">Não há formulário nesta demonstração: todo o agendamento acontece por conversa, para que você possa explicar o que precisa com calma.</p>
+          </div>
+          <ol class="howto__list" role="list" data-render="contact-howto"></ol>
+        </div>
+      </section>
+
+      <!-- ===== MAPA + HORÁRIOS ===== -->
+      <section class="section location" aria-labelledby="local-title">
+        <div class="container location__grid">
+          <div class="location__map" data-render="map"></div>
+          <div class="location__side">
+            <p class="kicker">Localização</p>
+            <h2 id="local-title">Onde <em>estamos</em></h2>
+            <p class="location__address" data-render="address"></p>
+            <div class="hours">
+              <h3 class="hours__title"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>Horários</h3>
+              <table class="hours__table">
+                <caption class="sr-only">Horários de atendimento</caption>
+                <tbody data-render="hours"></tbody>
+              </table>
+              <p class="note">Horários ilustrativos. Atendimento somente com hora marcada.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== FAQ DE AGENDAMENTO ===== -->
+      <section class="section faq" id="duvidas" aria-labelledby="duvidas-title">
+        <div class="container faq__grid">
+          <header class="faq__intro">
+            <p class="kicker">Perguntas frequentes</p>
+            <h2 id="duvidas-title">Dúvidas sobre <em>o agendamento</em></h2>
+            <p>Respostas rápidas para as dúvidas mais comuns. Se a sua não estiver aqui, envie uma mensagem.</p>
+            <button class="link-arrow" type="button" data-whatsapp data-service="Dúvida sobre o atendimento">
+              Enviar minha dúvida <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </button>
+          </header>
+          <div class="accordion" data-accordion data-render="faq"></div>
+        </div>
+      </section>
+
+      <nav class="page-pager" aria-label="Navegação entre páginas" data-render="page-pager"></nav>
+    </main>
+
+    <div data-layout="footer"></div>
+  </div>
+
+  <noscript><p class="noscript">Este site usa JavaScript para montar o menu e o conteúdo. Ative o JavaScript no navegador.</p></noscript>
+  <script src="js/layout.js"></script>
+  <script src="sistema/js/icones.js"></script>
+  <script src="js/elegance.js"></script>
+  <script src="js/palette-switcher.js"></script>
+  <script src="sistema/js/tempo.js"></script>
+  <script src="sistema/js/disponibilidade.js"></script>
+  <script src="sistema/js/dados-demo.js"></script>
+  <script src="sistema/js/api-demo.js"></script>
+  <script src="sistema/js/api-supabase.js"></script>
+  <script src="sistema/js/api.js"></script>
+  <script src="sistema/js/ui.js"></script>
+  <script src="sistema/js/site-extra.js"></script>
+</body>
+</html>

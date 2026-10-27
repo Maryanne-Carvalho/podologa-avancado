@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meus dados — Área do cliente</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#fbf6f1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Jost:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/elegance.css">
+  <link rel="stylesheet" href="../sistema/css/sistema.css">
+  <script src="../sistema/js/config.js"></script>
+  <script src="../js/content.js"></script>
+  <script src="../js/palettes.js"></script>
+  <script src="../js/color-utils.js"></script>
+  <script src="../js/theme-engine.js"></script>
+  <script>PS.theme.init();</script>
+</head>
+<body class="elegance" data-area="cliente" data-page="dados" data-raiz="../">
+<template data-conteudo>
+
+  <div class="page-head"><div class="page-head__text"><p class="auth__kicker">Área do cliente</p><h1>Meus dados</h1><p>Mantenha seu contato atualizado. Guardamos apenas o necessário para os agendamentos.</p></div></div>
+  <div class="grid-2 grid-2--wide-left">
+    <section class="panel" aria-labelledby="h-dados"><h2 id="h-dados">Cadastro</h2>
+      <p class="alert" data-msg hidden role="status" style="margin-top:1rem"></p>
+      <form class="form" data-form novalidate style="margin-top:1rem">
+        <div class="field"><label class="field__label" for="nome">Nome completo</label>
+        <input class="input" id="nome" type="text" autocomplete="name" required maxlength="120" aria-describedby="nome-e">
+        <p class="field__error" id="nome-e" hidden></p></div>
+        <div class="field"><label class="field__label" for="telefone">Telefone (WhatsApp)</label>
+        <input class="input" id="telefone" type="tel" autocomplete="tel" required inputmode="tel" aria-describedby="telefone-e">
+        <p class="field__error" id="telefone-e" hidden></p></div>
+        <div class="field"><label class="field__label" for="email">E-mail</label>
+        <input class="input" id="email" type="email" autocomplete="email" readonly aria-describedby="email-e">
+        <p class="field__hint">Para trocar o e-mail de acesso, fale com a clínica.</p><p class="field__error" id="email-e" hidden></p></div>
+        <div class="form-actions"><button class="btn btn--primary" type="submit" data-enviar>Salvar alterações</button></div>
+      </form>
+    </section>
+    <section class="panel panel--soft" aria-labelledby="h-priv"><h2 id="h-priv">Privacidade</h2>
+      <p class="small" style="margin:.75rem 0" data-consent></p>
+      <p class="small">Você pode baixar uma cópia dos seus dados e do seu histórico de agendamentos.</p>
+      <div class="actions-row" style="margin:.75rem 0 1.25rem"><button type="button" class="btn btn--outline btn--sm" data-baixar><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Baixar meus dados</button></div>
+      <p class="small" data-exclusao></p>
+      <p class="small" style="margin-top:.75rem"><a href="../privacidade.html">Como usamos seus dados</a></p>
+    </section>
+  </div>
+</template>
+<noscript><p style="padding:1rem">Esta área precisa de JavaScript ativado.</p></noscript>
+<script src="../sistema/js/tempo.js"></script>
+<script src="../sistema/js/disponibilidade.js"></script>
+<script src="../sistema/js/dados-demo.js"></script>
+<script src="../sistema/js/api-demo.js"></script>
+<script src="../sistema/js/api-supabase.js"></script>
+<script src="../sistema/js/api.js"></script>
+<script src="../sistema/js/ui.js"></script>
+<script src="../sistema/js/icones.js"></script>
+<script src="../sistema/js/layout-app.js"></script>
+<script src="../js/palette-switcher.js"></script>
+<script src="../sistema/js/cliente.js"></script>
+</body>
+</html>

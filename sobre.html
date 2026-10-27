@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sobre mim — Dra. Marina Oliveira · Podologia Studio</title>
+  <meta name="description" content="História, trajetória, formação e filosofia de atendimento da podóloga (conteúdo demonstrativo).">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#fbf6f1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Jost:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/elegance.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="sistema/css/sistema.css">
+  <script src="sistema/js/config.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/palettes.js"></script>
+  <script src="js/color-utils.js"></script>
+  <script src="js/theme-engine.js"></script>
+  <script>PS.theme.init();</script>
+</head>
+<body class="elegance" data-page="sobre">
+  <div class="site" id="site">
+    <div data-layout="header"></div>
+
+    <main id="conteudo">
+
+      <!-- ===== HERO: retrato + apresentação ===== -->
+      <section class="about-hero page-top" aria-labelledby="sobre-title">
+        <div class="container about-hero__grid">
+          <div class="about-hero__copy">
+            <nav class="crumbs" aria-label="Você está em"><a href="index.html">Início</a><span aria-hidden="true">/</span><span aria-current="page">Sobre mim</span></nav>
+            <p class="kicker">Sobre mim</p>
+            <h1 id="sobre-title" class="about-hero__title" data-bind="about.heroTitle">Olá, eu sou a Marina.</h1>
+            <p class="about-hero__role"><span data-bind="professional.name">Dra. Marina Oliveira</span> · <span data-bind="professional.role"></span></p>
+            <p class="about-hero__lead" data-bind="about.heroText"></p>
+            <dl class="numbers" data-render="about-numbers"></dl>
+          </div>
+          <div class="about-hero__visual">
+            <figure class="media about-hero__media" data-image="portrait">
+              <img alt="" decoding="async" fetchpriority="high">
+              <div class="media__fallback" aria-hidden="true"><svg class="icon"><use href="#i-user"/></svg><span>Foto da profissional</span></div>
+            </figure>
+            <p class="about-hero__signature" aria-hidden="true" data-bind="professional.firstName">Marina</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== HISTÓRIA ===== -->
+      <section class="section story" aria-labelledby="historia-title">
+        <div class="container story__grid">
+          <header class="story__head">
+            <p class="kicker">Minha história</p>
+            <h2 id="historia-title">Tudo começou com <em>uma bacia morna</em> e muita paciência.</h2>
+          </header>
+          <div class="story__text" data-render="about-story"></div>
+          <aside class="story__quote">
+            <svg class="story__mark" viewBox="0 0 40 32" aria-hidden="true"><path d="M0 32V19C0 8.5 6 2 16 0l2 4.5C12 6.4 9 10.6 9 16h8v16zm22 0V19C22 8.5 28 2 38 0l2 4.5C34 6.4 31 10.6 31 16h8v16z"/></svg>
+            <p data-bind="about.quote"></p>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ===== MOTIVAÇÃO (imagem + texto assimétricos) ===== -->
+      <section class="section motivation" aria-labelledby="motivacao-title">
+        <div class="container motivation__grid">
+          <div class="motivation__images">
+            <figure class="media motivation__img motivation__img--a" data-image="aboutDetail3">
+              <img alt="" decoding="async">
+              <div class="media__fallback" aria-hidden="true"><svg class="icon"><use href="#i-hands"/></svg><span>Imagem ilustrativa</span></div>
+            </figure>
+            <figure class="media motivation__img motivation__img--b" data-image="aboutDetail1">
+              <img alt="" decoding="async">
+              <div class="media__fallback" aria-hidden="true"><svg class="icon"><use href="#i-shield"/></svg><span>Imagem ilustrativa</span></div>
+            </figure>
+          </div>
+          <div class="motivation__copy">
+            <p class="kicker">Motivação</p>
+            <h2 id="motivacao-title" data-bind="about.motivation.title">Por que escolhi a podologia</h2>
+            <div class="motivation__text" data-render="about-motivation"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== TRAJETÓRIA + FORMAÇÃO ===== -->
+      <section class="section path" aria-labelledby="trajetoria-title">
+        <div class="container path__grid">
+          <div>
+            <p class="kicker">Trajetória</p>
+            <h2 id="trajetoria-title">Um caminho construído <em>passo a passo</em></h2>
+            <ol class="timeline" role="list" data-render="about-timeline"></ol>
+          </div>
+          <div class="education">
+            <div class="education__head">
+              <span class="education__icon" aria-hidden="true"><svg class="icon"><use href="#i-book"/></svg></span>
+              <h2 class="education__title">Formação e especializações</h2>
+            </div>
+            <p class="demo-banner" data-education-flag>
+              <svg class="icon" aria-hidden="true"><use href="#i-info"/></svg>
+              Conteúdo demonstrativo. Substitua pelos cursos, instituições e registros reais da profissional.
+            </p>
+            <ul class="education__list" role="list" data-render="about-education"></ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== FILOSOFIA ===== -->
+      <section class="philosophy" aria-labelledby="filosofia-title">
+        <div class="container philosophy__inner">
+          <p class="kicker kicker--on-deep" id="filosofia-title">Filosofia de atendimento</p>
+          <p class="philosophy__text" data-bind="about.philosophy"></p>
+          <p class="philosophy__sign">— <span data-bind="professional.name"></span></p>
+        </div>
+      </section>
+
+      <!-- ===== VALORES ===== -->
+      <section class="section values-row" aria-labelledby="valores-title">
+        <div class="container">
+          <header class="head head--split">
+            <div>
+              <p class="kicker">Valores</p>
+              <h2 id="valores-title">O que guia <em>cada atendimento</em></h2>
+            </div>
+          </header>
+          <ol class="values-row__list" role="list" data-render="about-values"></ol>
+        </div>
+      </section>
+
+      <!-- ===== DIFERENCIAIS + FOTOS ===== -->
+      <section class="section about-diffs" aria-labelledby="sobre-dif-title">
+        <div class="container about-diffs__grid">
+          <div class="about-diffs__copy">
+            <p class="kicker">Diferenciais</p>
+            <h2 id="sobre-dif-title">O que você pode <em>esperar de mim</em></h2>
+            <ul class="about-diffs__list" role="list" data-render="about-highlights"></ul>
+            <p class="note" data-bind="about.note"></p>
+          </div>
+          <figure class="media about-diffs__media" data-image="aboutDetail2">
+            <img alt="" decoding="async">
+            <div class="media__fallback" aria-hidden="true"><svg class="icon"><use href="#i-leaf"/></svg><span>Imagem ilustrativa</span></div>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ===== CONTINUIDADE ===== -->
+      <section class="section next-cta" aria-labelledby="sobre-next-title">
+        <div class="container next-cta__box">
+          <div>
+            <p class="kicker">Próximo passo</p>
+            <h2 id="sobre-next-title">Agora que você me conhece, veja <em>como posso ajudar.</em></h2>
+          </div>
+          <div class="next-cta__actions">
+            <a class="btn btn--primary btn--lg" href="servicos.html">Conhecer os serviços <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn--outline btn--lg" href="agendar.html"><span>Agendar com <span data-bind="professional.firstName">Marina</span></span></a>
+          </div>
+        </div>
+      </section>
+
+      <nav class="page-pager" aria-label="Navegação entre páginas" data-render="page-pager"></nav>
+    </main>
+
+    <div data-layout="footer"></div>
+  </div>
+
+  <noscript><p class="noscript">Este site usa JavaScript para montar o menu e o conteúdo. Ative o JavaScript no navegador.</p></noscript>
+  <script src="js/layout.js"></script>
+  <script src="sistema/js/icones.js"></script>
+  <script src="js/elegance.js"></script>
+  <script src="js/palette-switcher.js"></script>
+  <script src="sistema/js/tempo.js"></script>
+  <script src="sistema/js/disponibilidade.js"></script>
+  <script src="sistema/js/dados-demo.js"></script>
+  <script src="sistema/js/api-demo.js"></script>
+  <script src="sistema/js/api-supabase.js"></script>
+  <script src="sistema/js/api.js"></script>
+  <script src="sistema/js/ui.js"></script>
+  <script src="sistema/js/site-extra.js"></script>
+</body>
+</html>

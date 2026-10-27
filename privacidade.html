@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacidade e dados — Podologia Studio</title>
+  <meta name="description" content="Quais dados o sistema de agendamento guarda, para quê e como pedir acesso, correção ou exclusão.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#fbf6f1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Jost:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/elegance.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="sistema/css/sistema.css">
+  <script src="sistema/js/config.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/palettes.js"></script>
+  <script src="js/color-utils.js"></script>
+  <script src="js/theme-engine.js"></script>
+  <script>PS.theme.init();</script>
+</head>
+<body class="elegance" data-page="privacidade">
+  <div class="site" id="site">
+    <div data-layout="header"></div>
+
+    <main id="conteudo">
+      <section class="booking-page" aria-labelledby="priv-title">
+        <div class="container prose">
+          <div class="head">
+            <p class="kicker">Privacidade</p>
+            <h1 id="priv-title">Como usamos <em>seus dados</em></h1>
+            <p class="head__sub">Modelo de texto para a clínica adaptar com apoio jurídico. <span class="demo-chip">modelo · requer revisão</span></p>
+          </div>
+          <h2>Quais dados guardamos</h2>
+          <ul>
+            <li><strong>Para criar sua conta:</strong> nome, telefone e e-mail. A senha é guardada de forma protegida pelo serviço de login (Supabase Auth); a clínica não tem acesso a ela.</li>
+            <li><strong>Para os agendamentos:</strong> serviço escolhido, data, horário e situação (confirmado, cancelado, concluído ou falta).</li>
+            <li><strong>Anotações administrativas</strong> da clínica, como preferência de horário. O sistema não pede nem guarda informações de saúde.</li>
+          </ul>
+          <h2>Para que usamos</h2>
+          <p>Somente para organizar a agenda, identificar você no atendimento e avisar sobre mudanças no seu horário. Não vendemos nem compartilhamos seus dados para publicidade.</p>
+          <h2>Quem pode ver</h2>
+          <p>Você vê apenas os seus dados e agendamentos. A equipe autorizada da clínica vê os dados necessários para o atendimento. Essas regras são aplicadas pelo próprio banco de dados, não apenas pelas telas.</p>
+          <h2>Seus direitos</h2>
+          <ul>
+            <li><strong>Acesso:</strong> em Meus dados, use “Baixar meus dados”.</li>
+            <li><strong>Correção:</strong> altere nome e telefone em Meus dados ou peça à clínica.</li>
+            <li><strong>Exclusão:</strong> peça à clínica. Seu cadastro é anonimizado; o histórico de atendimentos pode ser mantido sem identificação pelo prazo exigido por lei.</li>
+          </ul>
+          <h2>Contato</h2>
+          <p>Para dúvidas sobre seus dados, fale com a clínica pelos canais da página de contato.</p>
+          <div class="demo-banner" role="note"><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg><span>Este texto é um ponto de partida e não garante, sozinho, a adequação à LGPD. A clínica deve revisá-lo com assessoria jurídica e indicar o encarregado (DPO), quando aplicável.</span></div>
+        </div>
+      </section>
+    </main>
+
+    <div data-layout="footer"></div>
+  </div>
+
+  <script src="js/layout.js"></script>
+  <script src="sistema/js/icones.js"></script>
+  <script src="js/elegance.js"></script>
+  <script src="js/palette-switcher.js"></script>
+  <script src="sistema/js/tempo.js"></script>
+  <script src="sistema/js/disponibilidade.js"></script>
+  <script src="sistema/js/dados-demo.js"></script>
+  <script src="sistema/js/api-demo.js"></script>
+  <script src="sistema/js/api-supabase.js"></script>
+  <script src="sistema/js/api.js"></script>
+  <script src="sistema/js/ui.js"></script>
+  <script src="sistema/js/site-extra.js"></script>
+</body>
+</html>

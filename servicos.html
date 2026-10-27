@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Serviços — Podologia Studio</title>
+  <meta name="description" content="Serviços de podologia explicados em detalhes: objetivo, como funciona e como se preparar (conteúdo demonstrativo).">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#fbf6f1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Jost:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/elegance.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="sistema/css/sistema.css">
+  <script src="sistema/js/config.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/palettes.js"></script>
+  <script src="js/color-utils.js"></script>
+  <script src="js/theme-engine.js"></script>
+  <script>PS.theme.init();</script>
+</head>
+<body class="elegance" data-page="servicos">
+  <div class="site" id="site">
+    <div data-layout="header"></div>
+
+    <main id="conteudo">
+
+      <!-- ===== HERO tipográfico + índice ===== -->
+      <section class="services-hero page-top" aria-labelledby="servicos-title">
+        <div class="container">
+          <nav class="crumbs" aria-label="Você está em"><a href="index.html">Início</a><span aria-hidden="true">/</span><span aria-current="page">Serviços</span></nav>
+          <div class="services-hero__grid">
+            <div>
+              <p class="kicker">Serviços</p>
+              <h1 id="servicos-title" class="services-hero__title">Cuidados para cada <em>fase da sua rotina</em></h1>
+            </div>
+            <div class="services-hero__aside">
+              <p>Conheça cada atendimento em detalhes: para que serve, como acontece e o que é bom saber antes de agendar. Se tiver dúvida sobre qual escolher, comece pela avaliação.</p>
+              <p class="note">As informações desta página são gerais e não substituem a avaliação individual.</p>
+            </div>
+          </div>
+          <nav class="service-index" aria-label="Índice de serviços">
+            <p class="service-index__label">Ir para:</p>
+            <ul role="list" data-render="services-index"></ul>
+          </nav>
+        </div>
+        <div class="container">
+          <figure class="media services-hero__media" data-image="servicesHero">
+            <img alt="" decoding="async" fetchpriority="high">
+            <div class="media__fallback" aria-hidden="true"><svg class="icon"><use href="#i-sparkle"/></svg><span>Imagem ilustrativa</span></div>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ===== SERVIÇOS DETALHADOS ===== -->
+      <div class="service-details" data-render="services-detail"></div>
+
+      <!-- ===== DÚVIDA SOBRE QUAL ESCOLHER ===== -->
+      <section class="section next-cta" aria-labelledby="escolher-title">
+        <div class="container next-cta__box">
+          <div>
+            <p class="kicker">Não sabe por onde começar?</p>
+            <h2 id="escolher-title">A avaliação é o primeiro passo <em>para qualquer cuidado.</em></h2>
+            <p class="next-cta__text">Comece pela avaliação podológica: escolha um horário livre na agenda on-line.</p>
+          </div>
+          <div class="next-cta__actions">
+            <a class="btn btn--primary btn--lg" href="agendar.html?servico=avaliacao">
+              <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>
+              Agendar avaliação
+            </a>
+            <a class="btn btn--outline btn--lg" href="contato.html#duvidas">Dúvidas sobre agendamento</a>
+          </div>
+        </div>
+      </section>
+
+      <nav class="page-pager" aria-label="Navegação entre páginas" data-render="page-pager"></nav>
+    </main>
+
+    <div data-layout="footer"></div>
+  </div>
+
+  <noscript><p class="noscript">Este site usa JavaScript para montar o menu e o conteúdo. Ative o JavaScript no navegador.</p></noscript>
+  <script src="js/layout.js"></script>
+  <script src="sistema/js/icones.js"></script>
+  <script src="js/elegance.js"></script>
+  <script src="js/palette-switcher.js"></script>
+  <script src="sistema/js/tempo.js"></script>
+  <script src="sistema/js/disponibilidade.js"></script>
+  <script src="sistema/js/dados-demo.js"></script>
+  <script src="sistema/js/api-demo.js"></script>
+  <script src="sistema/js/api-supabase.js"></script>
+  <script src="sistema/js/api.js"></script>
+  <script src="sistema/js/ui.js"></script>
+  <script src="sistema/js/site-extra.js"></script>
+</body>
+</html>
